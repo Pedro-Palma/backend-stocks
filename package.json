@@ -1,0 +1,48 @@
+{
+  "name": "backend-stocks",
+  "version": "1.0.0",
+  "description": "Backend for stocks project practices",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "npm run ts-node src/index.ts",
+    "ts-node": "cross-env NODE_OPTIONS=\"--loader=ts-node/esm --no-warnings --experimental-specifier-resolution=node\" node",
+    "build": "tsc",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pedro-Palma/backend-stocks.git"
+  },
+  "keywords": [
+    "stocks"
+  ],
+  "author": "Pedro Menendez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pedro-Palma/backend-stocks/issues"
+  },
+  "homepage": "https://github.com/Pedro-Palma/backend-stocks#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "jwt-simple": "^0.5.6",
+    "knex": "^0.95.10",
+    "objection": "^2.2.15",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt-nodejs": "0.0.31",
+    "@types/express": "^4.17.13",
+    "@types/jwt-simple": "^0.5.33",
+    "@types/knex": "^0.16.1",
+    "@types/moment": "^2.13.0",
+    "@types/node": "^16.7.7",
+    "concurrently": "^6.2.1",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.2"
+  }
+}
